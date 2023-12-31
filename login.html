@@ -46,11 +46,25 @@
                 <div class="login-form">
                     
                     <form action="#" method="post" autocomplete="on" id="form-id" class="form-class">
-                       <span class="mail_label">E-Mail Adresiniz:</span><div class="div_input" name="user" id="user-id"> <input type="email" placeholder="you@example.com">
+                       <div class="div_input" name="user" id="user-id"> <input type="email" id="email-id" class="email-class" placeholder="">
+                        <label for="email-id" class="input-label">E-Mail</label>
                     </div>
                         
-                    <span class="mail_label">Parola:</span> <div class="div_input" name="pw" id="pw-id"><input type="password" placeholder="*****" >
+                     <div class="div_input" name="pw" id="pw-id"><input type="password" id="pw-input-id" class="pw-class" placeholder="" >
+                        <label for="pw-input-id" class="input-label-pw">Parola</label>
                     </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-6 d-flex justify-content-end">
+                                <button type="reset" class="btn btn-secondary p-sm-2" id="reset">Kayıt Ol</button>
+                                
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6 d-flex justify-content-start "> 
+                                <button type="submit" class="btn btn-success p-sm-2" id="submit">Giriş Yap</button>   
+                            </div>
+                            
+                        </div>
+                        </div>
 
 
                     </form>

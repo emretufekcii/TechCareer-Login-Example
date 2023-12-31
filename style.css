@@ -9,7 +9,7 @@ body{
 
 .login_container{
     position: relative;
-    background: rgb(247, 235, 235);
+    background: #f7ebeb;
     width:50rem;
     margin:auto;
     margin-top: 15rem;
@@ -28,17 +28,12 @@ body{
     
 }
 
-.mail_label{
-    
-    margin: 17.2rem;
-    
-}
 
-
+/* Input Styles*/
 input[type="text"],
 input[type="email"],
-input[type="password"],
-button {
+input[type="password"]
+ {
     display: block;
     width: 30%;
     border: px solid #e1e5ee;
@@ -47,14 +42,75 @@ button {
     padding: 0.5rem;
     outline: none;
     margin-left: 17rem;
-    margin-bottom:0.5rem;
+    margin-bottom:1rem;
 }
 
 
 input[type="email"]:focus{
     border-color:  #05ac50;
+
 }
 input[type="password"]:focus {
     border-color:  #05ac50;
 
 }
+/* Email Label*/
+.input-label{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 18rem;
+    top: 5.7rem;
+    padding: 0 0.5rem;
+    cursor:text;
+    transition: top 200ms
+    ease-in, left 200ms ease-in
+    font-size 200ms ease-in;
+
+
+}
+
+
+.email-class:focus ~ .input-label, 
+.email-class:not(:placeholder-shown).email-class:not(:focus) ~ .input-label{
+    top: 4.2rem;
+    left: 18rem;
+    background-color: #f7ebeb;
+}
+
+/* Password Label*/
+.input-label-pw{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 18rem;
+    top: 9.5rem;
+    padding: 0 0.5rem;
+    cursor:text;
+    transition: top 200ms
+    ease-in, left 200ms ease-in
+    font-size 200ms ease-in;
+
+
+}
+
+
+.pw-class:focus ~ .input-label-pw, 
+.pw-class:not(:placeholder-shown).pw-class:not(:focus) ~ .input-label-pw{
+    top: 8rem;
+    left: 18rem;
+    background-color: #f7ebeb;
+}
+
+
+/* Butonlar */
+
+button{
+    
+    display: inline-block;
+    height: 2.5rem;
+    width: 6rem;
+    margin: 3rem;
+    
+    
+    
+}
+
