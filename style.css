@@ -5,3 +5,56 @@ body{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,194,109,1) 35%, rgba(41,51,73,1) 100%);
 }
+
+
+.login_container{
+    position: relative;
+    background: rgb(247, 235, 235);
+    width:50rem;
+    margin:auto;
+    margin-top: 15rem;
+    height: 20rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 6px #425161, 3px 3px 3px white;
+
+}
+.page_logo {
+    height: 5rem;
+    background: url('../img/techcareer-logo.svg') no-repeat center center/cover;
+    background-size: 20rem;
+    margin: auto;
+    -webkit-filter: drop-shadow(3px 3px 3px #222);
+    filter: drop-shadow(3px 3px 3px #222);
+    
+}
+
+.mail_label{
+    
+    margin: 17.2rem;
+    
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    display: block;
+    width: 30%;
+    border: px solid #e1e5ee;
+    border-radius: 0.5rem;
+    background: none;
+    padding: 0.5rem;
+    outline: none;
+    margin-left: 17rem;
+    margin-bottom:0.5rem;
+}
+
+
+input[type="email"]:focus{
+    border-color:  #05ac50;
+}
+input[type="password"]:focus {
+    border-color:  #05ac50;
+
+}
